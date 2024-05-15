@@ -1,7 +1,4 @@
-import { useState } from "react";
-import { Typography, Button, Row, Col, Divider } from "antd";
-import type { FormProps } from "antd";
-import { EditOutlined } from "@ant-design/icons";
+import { Typography, Row, Col } from "antd";
 import { FaRegClock } from "react-icons/fa6";
 import { LeaveModal } from "./LeaveModal";
 const { Title } = Typography;
