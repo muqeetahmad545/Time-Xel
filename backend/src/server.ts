@@ -21,7 +21,7 @@ app.use("/api", userRoutes);
 
 app.use(express.static(path.join(__dirname, "../../web/build")));
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../../frontend/build", "index.html"));
+  res.sendFile(path.join(__dirname, "../../web/build", "index.html"));
 });
 
 app.listen(PORT, () => {
