@@ -21,7 +21,7 @@ export const LeaApp = () => {
                   28 May 2024
                 </span>
                 <div className="border-2 border-white bg-white font-semibold text-slate-500 rounded-full p-1">
-                  Pending
+                  Pendings
                 </div>
               </div>
 
