@@ -22,7 +22,7 @@ app.use(body_parser_1.default.json());
 app.use("/api", userRoutes_1.default);
 app.use(express_1.default.static(path_1.default.join(__dirname, "../../web/build")));
 app.get("*", (req, res) => {
-    res.sendFile(path_1.default.join(__dirname, "../../frontend/build", "index.html"));
+    res.sendFile(path_1.default.join(__dirname, "../../web/build", "index.html"));
 });
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
