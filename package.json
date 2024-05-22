@@ -5,8 +5,9 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "tsc && cp dist/server.js netlify/functions/server.js"   
-  },
+    "dev": "nodemon src/server.ts",
+    "build": "npx tsc"
+    },
   "dependencies": {
     "@types/jsonwebtoken": "^9.0.6",
     "bcrypt": "^5.1.1",
@@ -16,9 +17,6 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.4",
-    "netlify-cli": "^17.23.5",
-    "netlify-lambda": "^2.0.16",
-    "serverless-http": "^3.2.0",
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
