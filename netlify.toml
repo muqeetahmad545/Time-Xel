@@ -1,10 +1,7 @@
 [build]
-  functions = "netlify/functions"
-  publish = "web/build"
-
+  backend = "backend"
 [functions]
   node_bundler = "esbuild"
-
 [dev]
   command = "npm start"
   port = 3000
