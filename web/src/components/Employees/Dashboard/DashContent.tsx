@@ -81,18 +81,52 @@ export const DashContent = () => {
           setAttendanceData(latRes);
           console.log(attendanceData);
           console.log(attendanceData?.time_in.toLocaleString().slice(0, 10));
-          // if (attendanceData?.time_in && !attendanceData?.time_out) {
-          //   setHourCard(true);
-          // } else if (attendanceData?.time_in && attendanceData?.time_out) {
-          //   setHourCard(false);
-          // } else {
-          //   setHourCard(false);
-          // }
         }
       }
     };
     fetchData();
-  }, [action]);
+  }, [action, attendanceData]);
+  
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const response = await fetchUserAttendance();
+  //     const userDetail = await fetchUserData();
+  //     console.log(userDetail);
+  //     setUserData(userDetail);
+  //     const latRes = response.data[response.data.length - 1];
+  //     const todayDate = new Date().toISOString().substring(0, 10);
+  //     console.log(todayDate);
+  //     if (Array.isArray(response.data) && response.data.length > 0) {
+  //       console.log(latRes);
+  //       if (
+  //         latRes?.time_in &&
+  //         latRes?.time_in.toLocaleString().slice(0, 10) === todayDate
+  //       ) {
+  //         setCheckIn(true);
+  //         setHourCard(true);
+  //       }
+  //       if (latRes?.time_out) {
+  //         setHourCard(false);
+  //       }
+  //       console.log(
+  //         latRes?.time_in.toLocaleString().slice(0, 10) === todayDate
+  //       );
+  //       if (latRes?.time_in.toLocaleString().slice(0, 10) === todayDate) {
+  //         setAttendanceData(latRes);
+  //         console.log(attendanceData);
+  //         console.log(attendanceData?.time_in.toLocaleString().slice(0, 10));
+  //         // if (attendanceData?.time_in && !attendanceData?.time_out) {
+  //         //   setHourCard(true);
+  //         // } else if (attendanceData?.time_in && attendanceData?.time_out) {
+  //         //   setHourCard(false);
+  //         // } else {
+  //         //   setHourCard(false);
+  //         // }
+  //       }
+  //     }
+  //   };
+  //   fetchData();
+  // }, [action]);
 
   const handleCheckIn = async () => {
     try {
