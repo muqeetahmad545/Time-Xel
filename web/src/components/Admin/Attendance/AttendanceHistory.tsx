@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { fetchAllUserAttendance } from "../../../services/attendenceApis/attendence";
 import { User } from "../../types";
 import { Divider, Table, Typography } from "antd";
-import { fetchUserData, fetchUsers } from "../../../services/userApis/userApis";
+import { fetchUsers } from "../../../services/userApis/userApis";
 const { Title } = Typography;
 type PropUser = {
   user: string;

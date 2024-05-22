@@ -1,5 +1,4 @@
 import { Col, DatePicker, Row, Typography } from "antd";
-import axios from "axios";
 import type { FormProps } from "antd";
 import { Button, Form, Input, Select } from "antd";
 import attendanceAPI from "../../../services/axios";

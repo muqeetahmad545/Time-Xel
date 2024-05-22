@@ -1,7 +1,6 @@
 import {
   Routes,
   Route,
-  BrowserRouter as Router,
   Navigate,
 } from "react-router-dom";
 import { DashContent } from "../components/Employees/Dashboard/DashContent";

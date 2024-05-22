@@ -1,7 +1,4 @@
-import { FaFacebookF } from "react-icons/fa6";
 import { Typography } from "@mui/material";
-import type { FormProps } from "antd";
-import axios from "axios";
 import { Button, Form, Input, Divider, message } from "antd";
 import { useNavigate } from "react-router-dom";
 import { authLogin } from "../../../services/authLogin";

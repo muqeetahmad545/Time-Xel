@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { Divider, Table, Typography } from "antd";
 import { User } from "../../types";
 import { fetchUsers } from "../../../services/userApis/userApis";

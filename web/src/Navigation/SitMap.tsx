@@ -6,9 +6,6 @@ import {
 } from "react-router-dom";
 import { AddUser } from "../components/Admin/User/AddUser";
 import { AppContent } from "../components/Admin/Dashboard/AppContent";
-import { DashContent } from "../components/Employees/Dashboard/DashContent";
-import { Profile } from "../components/Employees/Dashboard/Profile";
-import { LeaApp } from "../components/Employees/Leave/LeaApp";
 import { Employees } from "../components/Admin/User/Employeees";
 import AppLayout from "../common/AppLayout";
 import { AttendanceHistory } from "../components/Admin/Attendance/AttendanceHistory";

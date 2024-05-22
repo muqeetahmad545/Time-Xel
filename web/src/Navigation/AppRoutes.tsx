@@ -1,6 +1,6 @@
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import { Login } from "../components/Admin/Login/Login";
-import { AdminRoutes, EmplyeeRoutes, PrivateMap } from "./PrivateMap";
+import { PrivateMap } from "./PrivateMap";
 import { SitMap } from "./SitMap";
 import { useEffect, useState } from "react";
 import { fetchUserData } from "../services/userApis/userApis";
